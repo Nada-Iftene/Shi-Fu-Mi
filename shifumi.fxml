@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="331.0" prefWidth="458.0" style="-fx-background-color: #1d1d1d;" stylesheets="@dossier%20css/dossier.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllershifumi">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="432.0" layoutX="13.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@fichier%20shiFuMi/images.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="zero" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#proc" opacity="0.0" prefHeight="124.0" prefWidth="130.0" text="pierre" />
+      <Button fx:id="one" layoutX="164.0" layoutY="14.0" mnemonicParsing="false" onAction="#proc" opacity="0.0" prefHeight="124.0" prefWidth="130.0" text="papier" />
+      <Button fx:id="two" layoutX="310.0" layoutY="14.0" mnemonicParsing="false" onAction="#proc" opacity="0.0" prefHeight="124.0" prefWidth="130.0" text="ciseaux" />
+      <Label alignment="CENTER" layoutX="26.0" layoutY="212.0" prefHeight="27.0" prefWidth="69.0" text="vous :" textFill="#ff1c1c">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="304.0" layoutY="212.0" prefHeight="27.0" prefWidth="69.0" stylesheets="@dossier%20css/dossier.css" text="ordi :" textFill="#ff1313">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="scoreme" alignment="CENTER" layoutX="109.0" layoutY="212.0" onDragDetected="#proc" prefHeight="27.0" prefWidth="69.0" text="00" textFill="#fcff33">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="scoreordi" alignment="CENTER" layoutX="375.0" layoutY="212.0" onDragDetected="#proc" prefHeight="27.0" prefWidth="69.0" text="00" textFill="#f8ff2e">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="winner" alignment="CENTER" layoutX="62.0" layoutY="269.0" onDragDetected="#proc" prefHeight="33.0" prefWidth="327.0" textFill="#38ff4e">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
