@@ -1,2 +1,2 @@
 # Shi-Fu-Mi
-jeux shifumi avec java
+jeu shifumi avec javaFx
